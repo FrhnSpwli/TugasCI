@@ -3,7 +3,7 @@
 
 //Simple Calculator
 
-var a = 1;
+var a = 2;
 var b = 2;
 
 var penjumlahan = a + b;
@@ -24,6 +24,6 @@ if (penjumlahan > perkalian && penjumlahan > pengurangan && penjumlahan > pembag
     console.log("hasil operasi terbesar = pengurangan");
 } else if (pembagian > penjumlahan && pembagian > perkalian && pembagian > pengurangan) {
     console.log("hasil operasi terbesar = pembagian");
-}else {
-    console.log("tidak ada hasil");
+} else if (a = 2 && b == 2) {
+    console.log("hasil operasi terbesar = penjumlahan dan perkalian");
 }
