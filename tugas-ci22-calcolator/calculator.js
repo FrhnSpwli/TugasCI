@@ -3,8 +3,8 @@
 
 //Simple Calculator
 
-var a = 2;
-var b = 2;
+var a = 0;
+var b = 0;
 
 var penjumlahan = a + b;
 var perkalian = a * b;
@@ -26,4 +26,6 @@ if (penjumlahan > perkalian && penjumlahan > pengurangan && penjumlahan > pembag
     console.log("hasil operasi terbesar = pembagian");
 } else if (a = 2 && b == 2) {
     console.log("hasil operasi terbesar = penjumlahan dan perkalian");
+} else {
+    console.log("Program Bingung")
 }
