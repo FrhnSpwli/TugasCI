@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="left">
+        <div class="content">
+          <img src="../assets/logo.png" />
+          <h1>Seja bem vindo!</h1>
+          <h2>Acesse sua conta agora mesmo.</h2>
+        </div>
+        <div class="btn-explain">
+          <input type="submit" class="btn-signup" value="Sign Up" />
+          <p>squeci minha senha</p>
+        </div>
+      </section>
+      <section class="right">
+        <header>
+          <h1>Crie Sua Conta</h1>
+          <h3>Preencha o formulario</h3>
+        </header>
+        <div class="input">
+          <div class="input-content">
+            <div class="input-box" id="input-box1">
+              <img src="../assets/name-icons.png" />
+              <input type="text" id="name" class="input-field" placeholder="Nome" autofocus/>
+            </div>
+            <span id="error-msg-name" class="error-msg"></span>
+          </div>
+          <div class="input-content">
+            <div class="input-box" id="input-box2">
+              <img src="../assets/email-icons.png" />
+              <input type="email" id="email" class="input-field" placeholder="Email" />
+            </div>
+            <span id="error-msg-email" class="error-msg"></span>
+          </div>
+          <div class="input-content">
+            <div class="input-box" id="input-box3">
+              <img src="../assets/password-icons.png" />
+              <input type="password" id="password" class="input-field" placeholder="Password" />
+            </div>
+            <span id="error-msg-password" class="error-msg"></span>
+          </div>
+          <input type="submit" id="btn-submit" class="btn-submit" value="Submit" />
+        </div>
+      </section>
+    </main>
+    <div id="custom-alert" class="custom-alert">
+      <div class="custom-alert-content">
+        <p id="custom-alert-message"></p>
+        <button id="custom-alert-ok">OK</button>
+      </div>
+    </div>
+  </body>
+  </html> 
