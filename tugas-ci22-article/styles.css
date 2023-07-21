@@ -156,18 +156,18 @@ footer img {
   width: 100px;
 }
 
-socialmedia {
+.socialmedia {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-media img {
+.media img {
   width: 40px;
 }
 
-media:hover {
+.media:hover {
   transform: scale(1.2);
   transition: 0.5s;
 }
