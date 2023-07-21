@@ -3,8 +3,8 @@
 
 //Simple Calculator
 
-var a = 0;
-var b = 0;
+var a = 2;
+var b = 3;
 
 var penjumlahan = a + b;
 var perkalian = a * b;
@@ -16,16 +16,17 @@ console.log(a + " x " + b + " = " + perkalian);
 console.log(a + " - " + b + " = " + pengurangan);
 console.log(a + " / " + b + " = " + pembagian);
 
-if (penjumlahan > perkalian && penjumlahan > pengurangan && penjumlahan > pembagian) {
-    console.log("hasil operasi terbesar = penjumlahan");
-} else if (perkalian > penjumlahan && perkalian > pengurangan && perkalian > pembagian) {
-    console.log("hasil operasi terbesar = perkalian");
-} else if (pengurangan > penjumlahan && pengurangan > perkalian && pengurangan > pembagian) {
-    console.log("hasil operasi terbesar = pengurangan");
-} else if (pembagian > penjumlahan && pembagian > perkalian && pembagian > pengurangan) {
-    console.log("hasil operasi terbesar = pembagian");
-} else if (a = 2 && b == 2) {
+var hasilterbesar = Math.max(penjumlahan, perkalian, pengurangan, pembagian);
+
+if (a === 2 && b === 2 && (penjumlahan === hasilterbesar || perkalian === hasilterbesar)) {
     console.log("hasil operasi terbesar = penjumlahan dan perkalian");
-} else {
-    console.log("Program Bingung")
-}
+} else if (penjumlahan === hasilterbesar) {
+    console.log("hasil operasi terbesar = penjumlahan");
+} else if (perkalian === hasilterbesar) {
+    console.log("hasil operasi terbesar = perkalian");
+} else if (pengurangan === hasilterbesar) {
+    console.log("hasil operasi terbesar = pengurangan");
+} else
+if (pembagian === hasilterbesar) {
+    console.log("hasil operasi terbesar = pembagian");
+} 
